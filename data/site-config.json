@@ -1,0 +1,120 @@
+{
+    "domain": "https://www.image-media.com",
+    "hero_slides": [
+        {
+            "image": "assets/hero1-ngCnkDxi.webp",
+            "alt": "Dock-Beklebung Hamburg"
+        },
+        {
+            "image": "assets/hero2-DxGZoBFW.webp",
+            "alt": "Daimler Fensterbeklebung"
+        },
+        {
+            "image": "assets/hero3-CXxMb_zO.webp",
+            "alt": "Hahnenkamm-Rennen Bandenwerbung"
+        }
+    ],
+    "applications": [
+        {
+            "image": "assets/cat-grossflaeche-7QhGHyXE.webp",
+            "title": "Großflächenwerbung",
+            "tagline": "Weil manchmal doch die Größe zählt.",
+            "link": "/anwendungen/grossflaechenwerbung"
+        },
+        {
+            "image": "assets/cat-messe-CFYAAeJj.webp",
+            "title": "Messen",
+            "tagline": "Know-how für Ihre Messeauftritte.",
+            "link": "/anwendungen/messen"
+        },
+        {
+            "image": "assets/cat-events-C0z6h23y.jpg",
+            "title": "Events",
+            "tagline": "Verleihen Sie Ihrer Veranstaltung den passenden Rahmen.",
+            "link": "/anwendungen/events"
+        },
+        {
+            "image": "assets/cat-interior-Cwb1zFx6.jpg",
+            "title": "Interior- und Shopdesign",
+            "tagline": "Hochwertige Lösungen für Innenräume.",
+            "link": "/anwendungen/interior"
+        },
+        {
+            "image": "assets/cat-fahrzeug-Qg7wrt-F.jpg",
+            "title": "Fahrzeugbeschriftung",
+            "tagline": "Ihre Botschaft macht die Runde.",
+            "link": "/anwendungen/fahrzeuge"
+        },
+        {
+            "image": "assets/cat-inflatable-Bs64kNnf.webp",
+            "title": "Inflatables",
+            "tagline": "Mehr als nur heiße Luft.",
+            "link": "/anwendungen/inflatables"
+        },
+        {
+            "image": "assets/cat-architektur-DtykFlpJ.jpg",
+            "title": "Architektur",
+            "tagline": "Mehr als Beton und Glas.",
+            "link": "/anwendungen/architektur"
+        }
+    ],
+    "stats": {
+        "years": "20+",
+        "width": "5 m",
+        "projects": "12.000+",
+        "express": "48 h",
+        "delivery": "EU-weit",
+        "production": "24/7"
+    },
+    "contact": {
+        "phone_display": "+43 (0)5356 / 65257-0",
+        "phone_tel": "+4353566525700",
+        "email": "sales@image-media.com",
+        "fax": "+43 (0)5356 / 65257-50"
+    },
+    "hero": {
+        "title1": "Große Bilder.",
+        "title2": "Größere Wirkung.",
+        "subtitle": "Druck, Konfektion und Montage aus einer Hand — seit über zwei Jahrzehnten."
+    },
+    "about": {
+        "title1": "Millimetergenau und verlässlich —",
+        "title2": "vom Druck bis zur Montage.",
+        "text": "image-media mit Sitz in Oberndorf bei Kitzbühel ist einer der wirklichen Pioniere des großformatigen Digitaldruckes. Mit über zwei Jahrzehnten Erfahrung im Bereich des Large-Format-Printing können wir den heutigen Anforderungen unserer Kunden ein attraktives Angebot gegenüberstellen."
+    },
+    "impressum": {
+        "firma": "image-media Digitaldruck GmbH",
+        "strasse": "Weiherweg 1 - 3",
+        "plz_ort": "6372 Oberndorf in Tirol",
+        "land": "Österreich",
+        "geschaeftsfuehrer": "Geschäftsführung der image-media Digitaldruck GmbH",
+        "firmenbuchnummer": "FN 226106",
+        "firmenbuchgericht": "Landesgericht Innsbruck",
+        "uid": "ATU 55134802",
+        "wko": "Mitglied der WKO Tirol, Fachgruppe Druck",
+        "bank": {
+            "name": "Sparkasse Schwaz",
+            "blz": "20510",
+            "iban": "AT35 20510 00300003407",
+            "bic": "SPSCAT22XXX"
+        }
+    },
+    "faq": [
+        {
+            "q": "Welche Druckformate sind möglich?",
+            "a": "Unsere Anlagen drucken bis zu 5 Meter Bahnbreite — kombiniert auch nahezu unbegrenzte Längen. Für Sonderformate finden wir gemeinsam die passende Lösung."
+        },
+        {
+            "q": "Wie liefere ich Druckdaten richtig an?",
+            "a": "Am liebsten als PDF/X-4 in Originalgröße oder skaliert mit korrektem Farbprofil. Detaillierte Hinweise finden Sie in unserem Infocenter."
+        },
+        {
+            "q": "Übernehmt ihr auch die Montage?",
+            "a": "Ja. Unser Team montiert Ihre Drucke vor Ort — ob Fassade, Fahrzeug, Messestand oder Innenraum. Auf Wunsch europaweit."
+        },
+        {
+            "q": "Wie schnell kann produziert werden?",
+            "a": "Express-Aufträge realisieren wir innerhalb von 48 Stunden. Sprechen Sie uns einfach an, wir machen Ihren Termin möglich."
+        }
+    ]
+}
