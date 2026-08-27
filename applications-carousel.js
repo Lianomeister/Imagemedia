@@ -126,8 +126,23 @@
     return a;
   }
 
+  function existingCardsMatch(applications) {
+    const existing = Array.from(carousel.querySelectorAll("[data-app-card]"));
+    if (existing.length !== applications.length) return false;
+    for (let i = 0; i < existing.length; i++) {
+      const item = applications[i];
+      const expectedHref = "/Imagemedia" + (item.link || "/anwendungen");
+      const expectedSrc = "/Imagemedia/" + String(item.image || "").replace(/^\/+/, "");
+      const img = existing[i].querySelector("img");
+      if (existing[i].getAttribute("href") !== expectedHref) return false;
+      if (!img || img.getAttribute("src") !== expectedSrc) return false;
+    }
+    return true;
+  }
+
   function rebuildCards(applications) {
     if (!Array.isArray(applications) || !applications.length) return;
+    if (existingCardsMatch(applications)) return;
     carousel.innerHTML = "";
     applications.forEach(function (item, i) {
       carousel.appendChild(buildCard(item, i));

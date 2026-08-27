@@ -23,8 +23,8 @@
       ["/Imagemedia/unternehmen#team", "Team"],
     ],
     Infocenter: [
-      ["/Imagemedia/infocenter#grafikvorlagen", "Grafikvorlagen"],
-      ["/Imagemedia/infocenter#daten", "Datenaufbereitung"],
+      ["/Imagemedia/infocenter/grafikvorlagen", "Grafikvorlagen"],
+      ["/Imagemedia/infocenter/datenaufbereitung", "Datenaufbereitung"],
       ["/Imagemedia/infocenter/produktkatalog/produkte", "Produktkatalog"],
     ],
   };
@@ -564,7 +564,14 @@
       ? Array.from(buttonsContainer.querySelectorAll('button[aria-label^="Slide "]'))
       : [];
 
-    if (Array.isArray(slides) && slides.length) {
+    const slidesMatchExisting =
+      Array.isArray(slides) &&
+      slides.length === existingImgs.length &&
+      slides.every(function (slide, i) {
+        return existingImgs[i].getAttribute("src") === "/Imagemedia/" + String(slide.image || "").replace(/^\/+/, "");
+      });
+
+    if (Array.isArray(slides) && slides.length && !slidesMatchExisting) {
       imgs = slides.map(function (slide, i) {
         const img = document.createElement("img");
         img.src = "/Imagemedia/" + String(slide.image || "").replace(/^\/+/, "");
