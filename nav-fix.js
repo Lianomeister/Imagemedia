@@ -4,28 +4,28 @@
 
   const MENUS = {
     Anwendungen: [
-      ["/anwendungen/grossflaechenwerbung", "Großflächenwerbung"],
-      ["/anwendungen/messen", "Messen"],
-      ["/anwendungen/events", "Events"],
-      ["/anwendungen/interior", "Interior- und Shopdesign"],
-      ["/anwendungen/fahrzeuge", "Fahrzeugbeschriftung"],
-      ["/anwendungen/inflatables", "Inflatables"],
-      ["/anwendungen/architektur", "Architektur"],
+      ["/Imagemedia/anwendungen/grossflaechenwerbung", "Großflächenwerbung"],
+      ["/Imagemedia/anwendungen/messen", "Messen"],
+      ["/Imagemedia/anwendungen/events", "Events"],
+      ["/Imagemedia/anwendungen/interior", "Interior- und Shopdesign"],
+      ["/Imagemedia/anwendungen/fahrzeuge", "Fahrzeugbeschriftung"],
+      ["/Imagemedia/anwendungen/inflatables", "Inflatables"],
+      ["/Imagemedia/anwendungen/architektur", "Architektur"],
     ],
     Produkte: [
-      ["/produkte/digitaldruck", "Digitaldruck"],
-      ["/produkte/konfektion", "Konfektion"],
-      ["/produkte/montage", "Montage"],
-      ["/produkte/displays", "Displays"],
+      ["/Imagemedia/produkte/digitaldruck", "Digitaldruck"],
+      ["/Imagemedia/produkte/konfektion", "Konfektion"],
+      ["/Imagemedia/produkte/montage", "Montage"],
+      ["/Imagemedia/produkte/displays", "Displays"],
     ],
     Unternehmen: [
-      ["/unternehmen", "Über uns"],
-      ["/unternehmen#team", "Team"],
+      ["/Imagemedia/unternehmen", "Über uns"],
+      ["/Imagemedia/unternehmen#team", "Team"],
     ],
     Infocenter: [
-      ["/infocenter#grafikvorlagen", "Grafikvorlagen"],
-      ["/infocenter#daten", "Datenaufbereitung"],
-      ["/infocenter/produktkatalog/produkte", "Produktkatalog"],
+      ["/Imagemedia/infocenter#grafikvorlagen", "Grafikvorlagen"],
+      ["/Imagemedia/infocenter#daten", "Datenaufbereitung"],
+      ["/Imagemedia/infocenter/produktkatalog/produkte", "Produktkatalog"],
     ],
   };
 
@@ -111,12 +111,12 @@
         z-index: 0;
         isolation: isolate;
       }
-      footer a[href="/"] {
+      footer a[href="/Imagemedia/"] {
         z-index: 0 !important;
         display: inline-flex !important;
         width: auto !important;
       }
-      footer a[href="/"] img {
+      footer a[href="/Imagemedia/"] img {
         display: block;
         height: 2.25rem;
         width: auto;
@@ -128,8 +128,8 @@
         background-color: var(--brand-darker) !important;
       }
       @media (min-width: 768px) {
-        header a[href="/"] img,
-        footer a[href="/"] img {
+        header a[href="/Imagemedia/"] img,
+        footer a[href="/Imagemedia/"] img {
           height: 3rem !important;
         }
         header + div {
@@ -247,7 +247,7 @@
       })
       .join("");
     wrap.innerHTML +=
-      '<a href="/kontakt" style="display:block;margin:24px;padding:16px;text-align:center;background:#e11d2e;color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:10px">Kontakt</a>';
+      '<a href="/Imagemedia/kontakt" style="display:block;margin:24px;padding:16px;text-align:center;background:#e11d2e;color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:10px">Kontakt</a>';
     overlay.appendChild(wrap);
     document.body.appendChild(overlay);
     return overlay;
@@ -567,7 +567,7 @@
     if (Array.isArray(slides) && slides.length) {
       imgs = slides.map(function (slide, i) {
         const img = document.createElement("img");
-        img.src = "/" + String(slide.image || "").replace(/^\/+/, "");
+        img.src = "/Imagemedia/" + String(slide.image || "").replace(/^\/+/, "");
         img.alt = slide.alt || "";
         img.width = 1920;
         img.height = 900;
@@ -681,7 +681,7 @@
   }
 
   function loadSiteConfig() {
-    fetch("/data/site-config.json", { cache: "no-store" })
+    fetch("/Imagemedia/data/site-config.json", { cache: "no-store" })
       .then(function (res) {
         return res.ok ? res.json() : null;
       })

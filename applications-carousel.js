@@ -87,12 +87,12 @@
   function buildCard(item, i) {
     const a = document.createElement("a");
     a.setAttribute("data-app-card", "");
-    a.href = item.link || "/anwendungen";
+    a.href = "/Imagemedia" + (item.link || "/anwendungen");
     a.className =
       "group relative shrink-0 min-w-[88vw] sm:min-w-[45vw] md:min-w-[40vw] lg:min-w-[32vw] xl:min-w-[28vw] aspect-video snap-center bg-black border border-white/10 overflow-hidden shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl";
 
     const img = document.createElement("img");
-    img.src = "/" + String(item.image || "").replace(/^\/+/, "");
+    img.src = "/Imagemedia/" + String(item.image || "").replace(/^\/+/, "");
     img.alt = item.title || "";
     img.loading = "lazy";
     img.draggable = false;
@@ -389,7 +389,7 @@
     startAutoplay();
   }
 
-  fetch("/data/site-config.json", { cache: "no-store" })
+  fetch("/Imagemedia/data/site-config.json", { cache: "no-store" })
     .then(function (res) {
       return res.ok ? res.json() : null;
     })

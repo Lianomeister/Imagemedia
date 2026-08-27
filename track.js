@@ -29,7 +29,7 @@
     if (href.indexOf("tel:") === 0) return "call";
     if (href.indexOf("mailto:") === 0) return "email";
     if (/\.pdf(\?|#|$)/i.test(href)) return "pdf_download";
-    if (href === "/kontakt" || href.indexOf("/kontakt#") === 0) return "contact_cta";
+    if (href === "/Imagemedia/kontakt" || href.indexOf("/Imagemedia/kontakt#") === 0) return "contact_cta";
     return null;
   }
 

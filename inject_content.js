@@ -1,5 +1,5 @@
 (function() {
-    const PDF_SRC = "/images/anwendungen/produkte.pdf?v=4";
+    const PDF_SRC = "/Imagemedia/images/anwendungen/produkte.pdf?v=4";
     const PDF_OPTS = "view=FitH&toolbar=0&navpanes=0&scrollbar=1";
 
     function ensureChapterStyles() {
@@ -49,17 +49,17 @@
 
 (function() {
     const urlMap = {
-        'Grossflächenwerbung': '/anwendungen/grossflaechenwerbung',
-        'Messen': '/anwendungen/messen',
-        'Events': '/anwendungen/events',
-        'Interior- und Shopdesign': '/anwendungen/interior',
-        'Fahrzeugbeschriftung': '/anwendungen/fahrzeuge',
-        'Inflatables': '/anwendungen/inflatables',
-        'Architektur': '/anwendungen/architektur'
+        'Grossflächenwerbung': '/Imagemedia/anwendungen/grossflaechenwerbung',
+        'Messen': '/Imagemedia/anwendungen/messen',
+        'Events': '/Imagemedia/anwendungen/events',
+        'Interior- und Shopdesign': '/Imagemedia/anwendungen/interior',
+        'Fahrzeugbeschriftung': '/Imagemedia/anwendungen/fahrzeuge',
+        'Inflatables': '/Imagemedia/anwendungen/inflatables',
+        'Architektur': '/Imagemedia/anwendungen/architektur'
     };
 
     function addMehrLinks() {
-        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') return;
+        if (window.location.pathname !== '/Imagemedia/' && window.location.pathname !== '/Imagemedia/index.html') return;
 
         const cards = document.querySelectorAll('.touch-pan-y button[aria-label]');
         cards.forEach(card => {
